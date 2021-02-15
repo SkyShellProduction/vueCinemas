@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+body {
+    background: #040D1F;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+/* header */
+.offer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    padding: 20px 0;
+}
+
+.offer__img {
+    display: flex;
+    align-items: center;
+}
+
+.offer__img-text {
+    font-family: 'Comfortaa';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 24px;
+
+}
+
+.offer__img img {
+    width: auto;
+}
+
+.nav {
+    background: rgba(1, 3, 5, 0.80);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    /* backdrop-filter: blur(15px); */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo span {
+
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__nav-link {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: block;
+    position: relative;
+    margin-right: 30px;
+}
+
+.header__list li:last-child .header__nav-link {
+    margin-right: 0;
+}
+
+.header__nav-link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+    border-radius: 23px 10px 0px 0px;
+}
+
+.header__nav-link:hover {
+    color: #ED8E00;
+
+}
+
+.header__nav-link:hover::after {
+    background: #ED8E00;
+}
+
+.header__content {
+    height: 640px;
+    background: url(../images/kong\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header__title {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+.header__descr {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #C8C8C8;
+    max-width: 570px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header__links {
+    display: flex;
+}
+
+.header__link {
+    display: block;
+    max-width: 166px;
+    width: 100%;
+    padding: 17px 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    background: #F18128;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+}
+
+.header__link-se {
+    font-size: 16px;
+    color: #fff;
+    background: #040D1F;
+    margin-left: 30px;
+}
+
+/* header end */
+
+/* main start */
+.films {
+    padding: 60px 0 77.48px;
+}
+
+.films__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.films__title {
+    font-family: 'Comfortaa';
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #F18128;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F18128;
+    width: max-content;
+    margin-bottom: 54.48px;
+}
+
+.films__item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.films__abs {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 54.09px 14.49px 18.64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.films__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.films__icon img {
+    width: auto;
+}
+
+.films__duration {
+    padding: 7px 28px 7.15px 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 10px;
+    color: #FFFFFF;
+    margin-top: 12.07px;
+    background: rgba(7, 15, 25, 0.2);
+    margin-bottom: 30.08px;
+}
+
+.films__name {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 12.18px;
+}
+
+.films__descr {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.black__widow {
+    padding: 42px 0 80px;
+    background: url(../images/black\ widow\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.black__widow-img {
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 51px;
+}
+
+.black__widow-descr {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #000000;
+    margin-bottom: 55px;
+    max-width: 558px;
+    width: 100%;
+}
+
+.collections {
+    padding: 61px 0 63.31px;
+}
+
+.collections__title {
+    margin-bottom: 51.31px;
+}
+
+.collections__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.collections__item {
+    position: relative;
+    overflow: hidden;
+}
+
+.collections__abs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 7.73px 6.77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.collections__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.collections__column span {
+    display: block;
+    width: 19.34px;
+    height: 24.17px;
+    background: #040D1F;
+    border-radius: 2px;
+}
+
+.collections__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections__abs img {
+    width: auto;
+}
+
+.collections__descr {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 15.23px;
+}
+
+.collections__item:hover .collections__abs {
+    transform: scale(1.2);
+}
+
+.series {
+    padding-bottom: 63px;
+}
+
+.series__title {
+    margin-bottom: 54px;
+}
+
+.series__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.game__thrones {
+    padding: 96px 22px 97px;
+    background: url(../images/game\ of\ thrones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 4;
+}
+
+.game__thrones-title {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 27px;
+    color: #FFFFFF;
+}
+
+.game__thrones-descr {
+    font-family: 'Comfortaa';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.series__item {
+    position: relative;
+}
+
+.wanda__vision {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.series__abs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.series__abs img {
+    width: auto;
+}
+
+.series__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.series__descr {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/* main end */
+
+/* footer start */
+
+.footer {
+    padding: 24px 0;
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__links {
+    display: flex;
+}
+.footer__link:last-child{
+    display: block;
+    margin-left: 49.79px;
+}
+.footer__descr {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+@media(max-width: 968px){
+    .collections__descr{
+        font-size: 15px;
+    }
+    .series__descr{
+        font-size: 18px;
+    }
+}
+@media(max-width: 838px){
+    
+    .films__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 750px){
+    .collections__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collections__descr{
+        font-size: 26px;
+    }
+    .series__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game__thrones{
+        grid-column: span 2;
+    }
+}
+@media(max-width: 666px){
+    .footer__content{
+        flex-direction: column;
+    }
+    .footer__descr{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@media(max-width: 576px){
+    .header__nav{
+        flex-direction: column;
+        padding: 12px 0;
+    }
+    .logo{
+        margin-bottom: 15px;
+    }
+    .logo img{
+        width: 46px;
+    }
+   
+    .header__nav-link::after{
+        display: none;
+    }
+    .header__content{
+        margin-top:76px;
+    }
+    .films__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width: 454px){
+    .series__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .game__thrones{
+        grid-column: initial;
+    }
+    .wanda__vision{
+        grid-column: initial;
+        grid-row: initial;
+    }
+    .header__title{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    .collections__descr{
+        font-size: 18px;
+    }
+    .game__thrones-descr{
+        text-align: justify;
+    }
+    .header__nav-link{margin-right: 15px;}
+}
